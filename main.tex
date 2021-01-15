@@ -1,0 +1,220 @@
+\documentclass[review]{elsarticle}
+\input{Text/preamble} % add new packages and formatting options to preamble file
+
+\journal{Encyclopedia of Sensors and Biosensors}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{glossaries}
+\usepackage{nomencl}
+
+
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+\addbibresource{MyLib.bib}
+%\bibliographystyle{style/model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+% \bibliographystyle{style/elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+% *** Paper Title ***
+\title{Implantable and Wearable Sensors for Assistive Technologies}
+% Linebreaks \\ can be used within to get better formatting as desired.
+
+
+%% Group authors per affiliation:
+\author{Ulkuhan~Guler}
+\address{Worcester Polytechnic Institute, Electrical and Computer Engineering Department, 100 Institute Road, Worcester, MA, USA\\
+Email: uguler@wpi.edu}
+
+\author{Tuna Tufan, Aatreya Chakravarti, Yifei Jin}
+\address{Worcester Polytechnic Institute, Electrical and Computer Engineering Department, 100 Institute Road, Worcester, MA, USA\\
+Email: ttufan@wpi.edu, achakravarti@wpi.edu, yjin3@wpi.edu}
+
+\author{Maysam Ghovanloo}
+\address{Bionic Sciences, Atlanta, GA, USA\\
+Email: mghovan@ieee.org}
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+% \markboth{Encyclopedia of Sensors and Biosensors}%
+% {Guler \MakeLowercase{\textit{et al.}}: Implantable and Wearable Sensors for Assistive Technologies}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+%\makeglossaries
+
+%\newglossaryentry{latex}
+%{
+%    name=latex,
+%    description={Is a mark up language specially suited 
+%    for scientific documents}
+%}
+
+%\newglossaryentry{maths}
+%{
+%    name=mathematics,
+%}
+
+%\makenomenclature
+
+% make the title area
+%\maketitle
+
+
+%################ Abstract #############%
+
+ \begin{abstract}
+Please provide a 50-100 word synopsis of the article, which will be used to summarise the work when presented online.
+\end{abstract}
+
+%################ Keywords #############%
+\begin{keyword}
+Please provide 10-15 keywords, which will be used for indexing purposes only. These should be listed alphabetically.\\
+Assistive Communication Systems,  Auditory Impairments, Brain Computer Interfaces, Cognitive Augmentation, Eye Trackers, Implantable Sensor, Language Disorders, Manipulation and Control of the Environment, Seating and Transportation Systems, Sensory Aids,   Smart Bed, Smart Cane, Smart Walker, Smart Wheel Chair, Tongue Drive Systems, Visual Impairment, Voice/Speech Recognition, Wearable Sensors.
+\end{keyword}
+
+%################ Nomenclature #############%
+%\mbox{}
+
+%\nomenclature{$c$}{Speed of light in a vacuum inertial frame}
+%\nomenclature{$h$}{Planck constant}
+
+%\printnomenclature
+
+
+\end{frontmatter}
+%################ Glossaries #############%
+
+%\printglossaries
+%Please provide 5-10 glossary entries with brief, dictionary-style definitions for any technical or unfamiliar terms used in the article. Include terms that may be unfamiliar to the average undergraduate. These should be listed alphabetically.
+
+
+
+%################ Sections #############%
+\input{Text/sec1.intro} 
+\input{Text/sec2.communication}
+\input{Text/sec3.sensory}
+\input{Text/sec4.seating.transportation}
+\input{Text/sec5.mani.cntl}
+\input{Text/sec6.prosthetic}
+\input{Text/sec7.cognitive}
+\input{Text/sec8.conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%\bibliographystyle{harvard}
+% argument is your BibTeX string definitions and bibliography database(s)
+
+
+\printbibliography
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+% \begin{IEEEbiography}{Ulkuhan Guler}
+% Biography text here.
+% \end{IEEEbiography}
+
+% \begin{IEEEbiography}{Maysam Ghovanloo}
+% Biography text here.
+% \end{IEEEbiography}
+
+% if you will not have a photo at all:
+% \begin{IEEEbiographynophoto}{Maysam Ghovanloo}
+% Biography text here.
+% \end{IEEEbiographynophoto}
+
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+% that's all folks
+\end{document}

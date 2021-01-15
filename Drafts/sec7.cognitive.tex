@@ -1,0 +1,130 @@
+\newpage
+\section{Cognitive Aids}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=180mm]{Figure/CognitiveAid/CognitiveAidCollage}
+    \caption{Schematic illustrations and photographs of cognitive aid devices. (a) Illustration of NIRS and tDCS systems integrated with different configurations that can be applied due to lack of cross-coupling. (b) Schematic illustration of BioWolf system block diagram. (c) Microscopic photographs of fabriacted probe containing sensors for temperature, electrical brain signals, and brain oxygenation measurement. (d) Illustration of ptical and electrical stimulation headstage and implanted device in a rat. (e) Table comparing the diseases and disorders that each company is device can treat.}
+    \label{fig:Wu}
+\end{figure}
+
+\subsection{General Cognitive Aids}
+
+\textbf{Paper I} 
+\\ \\
+\noindent
+Yamakawa, Toshitaka, Takao Inoue, Masatsugu Niwayama, Fumiaki Oka, Hirochika Imoto, Sadahiro Nomura, and Michiyasu Suzuki. “Implantable Multi-Modality Probe for Subdural Simultaneous Measurement of Electrophysiology, Hemodynamics, and Temperature Distribution.” IEEE Transactions on Biomedical Engineering 66, no. 11 (November 2019): 3204–11. https://doi.org/10.1109/TBME.2019.2902189. \\ \\
+
+\noindent
+\textbf{Keywords} Near-infrared spectroscopy, Negative temperature coefficient thermistors, Electrocorticography, Flexible electronics, Haemodynamics, Multimodal multichannel probe. \\ \\
+
+\noindent
+\textbf{Abstract} Objective: The purpose of this paper is to demonstrate how the integration of the multi-channel measurement capabilities of near-infrared spectroscopy (NIRS), electrocorticography (ECoG), and negative temperature coefficient thermistor sensors into a single device compact enough for subdural implantation can provide beneficial information on various aspects of brain cortical activity and prove a powerful medical modality for pre-, intra-, and post-operative diagnoses in neurosurgery. Methods: The development of a flexible multi-modal multi-channel probe for the simultaneous measurement of the NIRS, ECoG, and surficial temperature obtained from the cerebral cortex was carried out. Photoelectric bare chips for NIRS channels, miniature temperature-coefficient thermistors for measuring localized temperature variation, and 3-mm-diameter platinum plates for ECoG recording were assembled on a polyimide-based flexible printed circuit to create six channels for each modality. A conformal coating of Parylene-C was applied on all the channels except the ECoG to make the probe surface biocompatible. Results: As a first-in-human study, the simultaneous measurement capability of the multi-modality probe, with sufficient signal-to-noise ratio and accuracy, to observe pathological neural activities in subjects during surgery and post-operative monitoring, with no complications two weeks since the implantation, was confirmed. Conclusion: The feasibility of using a single device to assess the dynamic pathological activity from three different aspects was determined for human patients. Significance: The simultaneous and accurate multi-channel recording of electrical, hemodynamic, and thermographic cortical activities in a single device small enough for subdural implantation is likely to have major implications in neurosurgery and neuroscience. \\ \\
+
+\noindent
+\textbf{Sensors in use:}
+\begin{itemize}
+    \item ECoG platinum electrodes
+    \item LEDs
+    \item Photodiodes
+    \item NTC Thermistor
+    \\ \\
+\end{itemize}
+
+\noindent
+\textbf{Summary} In this paper, the authors present an implantable flexible strip device designed to measure brain temperature, electrical signals, and oxygenation levels during surgery. Brain temperature is measured using a simple negative temperature coefficient (NTC) thermistor. The electrical signals are recorded by six-channel platinum electrocorticograpic (ECoG) electrodes. The oxygenation levels is determined by shining a light on the tissue and analyzing the change in amplitude and phase of the reflected signal. Since the device is only used during surgery, the device lacks a wireless data transfer module. However, this device shows the promise of integrating three relevant sensing modalities and could lead to future research in the design of a wireless, permanently implanted device similar to the one presented in this paper. \\ \\
+
+%%%%%%
+
+\textbf{Paper II} 
+\\ \\
+\noindent
+Jia, Yaoyao, Yan Gong, Arthur Weber, Wen Li, Maysam Ghovanloo. “A Mm-Sized Free-Floating Wireless Implantable Opto-Electro Stimulation Device.” Micromachines; Basel 11, no. 6 (2020): 621. http://dx.doi.org.ezpxy-web-p-u01.wpi.edu/10.3390/mi11060621. \\ \\
+
+\noindent
+\textbf{Keywords} Charge balancing free-floating implants, Inductive link, Switched-capacitor-based optical and electrical stimulation.  \\ \\
+
+\noindent
+\textbf{Abstract} Towards a distributed neural interface, consisting of multiple miniaturized implants, for interfacing with large-scale neuronal ensembles over large brain areas, this paper presents a mm-sized free-floating wirelessly-powered implantable opto-electro stimulation (FF-WIOS2) device equipped with 16-ch optical and 4-ch electrical stimulation for reconfigurable neuromodulation. The FF-WIOS2 is wirelessly powered and controlled through a 3-coil inductive link at 60 MHz. The FF-WIOS2 receives stimulation parameters via on-off keying (OOK) while sending its rectified voltage information to an external headstage for closed-loop power control (CLPC) via load-shift-keying (LSK). The FF-WIOS2 system-on-chip (SoC), fabricated in a 0.35-µm standard CMOS process, employs switched-capacitor-based stimulation (SCS) architecture to provide large instantaneous current needed for surpassing the optical stimulation threshold. The SCS charger charges an off-chip capacitor up to 5 V at 37\% efficiency. At the onset of stimulation, the capacitor delivers charge with peak current in 1.7–12 mA range to a micro-LED (µLED) array for optical stimulation or 100–700 μA range to a micro-electrode array (MEA) for biphasic electrical stimulation. Active and passive charge balancing circuits are activated in electrical stimulation mode to ensure stimulation safety. In vivo experiments conducted on three anesthetized rats verified the efficacy of the two stimulation mechanisms. The proposed FF-WIOS2 is potentially a reconfigurable tool for performing untethered neuromodulation. \\ \\
+
+\noindent
+\textbf{Sensors in use:}
+\begin{itemize}
+    \item uLED \\ \\
+\end{itemize}
+
+\noindent
+\textbf{Summary} Neuromodulation, a form of stimulation and recording of neuronal activity, can be achieved via electrical or optical stimulation. The advantage of the optical stimulation is that it is cell type-specific, however it also consumes a relatively high amount of power compared to electrical stimulation. As a way to balance the two approaches, this paper presents a device that offers 16-channel optical and 4-channel electrical stimulation. The proposed device consists of a headstage and an implanted FF-WIOS2 stage. The headstage communicates via BLE to external devices as well as by inductive link to the FF-WIOS2 using on-off keying (OOK). The FF-WIOS2 device has electrodes for electrical stimulation and uLEDs for optical stimulation. The collected data from stimulation is transferred through the inductive link using load-shift keying to the headstage and then off the system to an external processing unit. \\ \\
+
+%%%%%%
+
+\textbf{Paper III} 
+\\ \\
+\noindent
+Amon, A., and F. Alesch. “Systems for Deep Brain Stimulation: Review of Technical Features.” Journal of Neural Transmission 124, no. 9 (2017): 1083–91. https://doi.org/10.1007/s00702-017-1751-6. \\ \\
+
+\noindent
+\textbf{Keywords} Boston Scientific Vercise, Medtronic Activa, St.Jude Libra, Deep Brain Stimulators.  \\ \\
+
+\noindent
+\textbf{Abstract} The use of deep brain stimulation (DBS) is an important treatment option for movement disorders and other medical conditions. Today, three major manufacturers provide implantable systems for DBS. Although the underlying principle is basically the same for all available systems, the differences in the technical features vary considerably. This article outlines aspects regarding the technical features of DBS systems. The differences between voltage and current sources are addressed and their effect on stimulation is shown. To maintain clinical benefit and minimize side effects the stimulation field has to be adapted to the requirements of the patient. Shaping of the stimulation field can be achieved by the electrode design and polarity configuration. Furthermore, the electric signal consisting of stimulation rate, stimulation amplitude and pulse width affect the stimulation field. Interleaving stimulation is an additional concept, which permits improved treatment outcomes. Therefore, the electrode design, the polarity, the electric signal, and the concept of interleaving stimulation are presented. The investigated systems can be also categorized as rechargeable and non-rechargeable, which is briefly discussed. Options for interconnecting different system components from various manufacturers are presented. The present paper summarizes the technical features and their combination possibilities, which can have a major impact on the therapeutic effect. \\ \\
+
+\noindent
+\textbf{Summary} This paper is a comparison of the deep brain stimulator devices produced by Boston Scientfic (B), Medtronic (M), and St. Jude (S). The devices produced by these companies are reviewed on the basis of a variety of technical considerations. The considerations include electrical source, number of implantable pulse generators (IPGs), electrode design, polarity, and electrical stimulation signal. It was found that B devices offered current source stimulation to avoid issues with impedance changes affect stimulation current. B devices also has more than one IPG to enable stimulation of each hemisphere of the brain separately if desired. Segmented eight electrode design with multi-polar configurations was also used by B. Finally, many stimulation configurations were offered by B devices which allows for treatment of different symptoms and limits unwanted side effects of stimulation outside the localized region. S devices also offered the same features as the B devices with the exception of not being able to set different amplitude levels for each contact during stimulation. M devices varied mainly in electrode designed where their devices were equipped with classic unipolar ring contact electrodes. They also shared the S device characteristic of being designed with a single current source versus B devices. \\ \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Brain Computer Interface}
+\noindent
+\\ 
+\textbf{Paper IV} 
+\\ \\
+\noindent
+C. Lin et al, "Review of Wireless and Wearable Electroencephalogram Systems and Brain-Computer Interfaces - A Mini-Review," Gerontology, vol. 56, (1), pp. 112-9, 2010. Available: http://ezproxy.wpi.edu/login?url=https://www-proquest-com.ezpxy-web-p-u01.wpi.edu/docview/274693274?accountid=29120. DOI: http://dx.doi.org.ezpxy-web-p-u01.wpi.edu/10.1159/000230807. \\ \\
+
+\noindent
+\textbf{Keywords} Brain Machine Interfaces, Electroencephalography, Wireless networks.  \\ \\
+
+\noindent
+\textbf{Abstract} Biomedical signal monitoring systems have rapidly advanced in recent years, propelled by significant advances in electronic and information technologies. Brain-computer interface (BCI) is one of the important research branches and has become a hot topic in the study of neural engineering, rehabilitation, and brain science. Traditionally, most BCI systems use bulky, wired laboratory-oriented sensing equipments to measure brain activity under well-controlled conditions within a confined space. Using bulky sensing equipments not only is uncomfortable and inconvenient for users, but also impedes their ability to perform routine tasks in daily operational environments. Furthermore, owing to large data volumes, signal processing of BCI systems is often performed off-line using high-end personal computers, hindering the applications of BCI in real-world environments. To be practical for routine use by unconstrained, freely-moving users, BCI systems must be noninvasive, nonintrusive, lightweight and capable of online signal processing. This work reviews recent online BCI systems, focusing especially on wearable, wireless and real-time systems. \\ \\
+
+\noindent
+\textbf{Summary} In this paper, 32 current (for the time) brain computer interfaces (BCI) devices were evaluated based on their categorization in several functionality fields. Starting with transmission media, the devices were subdivided based on if they were wired or wireless. Intended subjects with varying disorders and levels of severity was the next discriminating factor. Another category, target activity was directly reliant on the intended subjects. One important category was whether the devices used noninvasive EEG electrodes or implanted, invasive ECoG electrodes. Finally, number of channels was also noted for each of the devices reviewed.  \\ \\
+
+%%%%%%
+
+\textbf{Paper V} 
+\\ \\
+\noindent
+Miao, Yun, and Valencia Joyner Koomson. “A CMOS-Based Bidirectional Brain Machine Interface System With Integrated FdNIRS and TDCS for Closed-Loop Brain Stimulation.” IEEE Transactions on Biomedical Circuits and Systems 12, no. 3 (June 2018): 554–63. https://doi.org/10.1109/TBCAS.2018.2798924. \\ \\
+
+\noindent
+\textbf{Keywords} Closed-loop Brain Stimulation, Frequency-Dependent Near IR Spectroscopy, Transcranial Direct Current Stimulation. \\ \\
+
+\noindent
+\textbf{Abstract} A CMOS-based bidirectional brain machine interface system with on-chip frequency-domain near infrared spectroscopy (fdNIRS) and transcranial direct-current stimulation (tDCS) is designed to enable noninvasive closed-loop brain stimulation for neural disorders treatment and cognitive performance enhancement. The dual channel fdNIRS can continuously monitor absolute cerebral oxygenation during the entire tDCS process by measuring NIR light's attenuation and phase shift across brain tissue. Each fdNIRS channel provides 120 dBΩ transimpedance gain at 80 MHz with a power consumption of 30 mW while tolerating up to 8 pF input capacitance. A photocurrent between 10 and 450 nA can be detected with a phase resolution down to 0.2°. A lensless system with subnanowatt sensitivity is realized by using an avalanche photodiode. The on-chip programmable voltage-controlled resistor stimulator can support a stimulation current from 0.6 to 2.2 mA with less than 1\% variation, which covers the required current range of tDCS. The chip is fabricated in a standard 130-nm CMOS process and occupies an area of 2.25 mm2. \\ \\
+
+\noindent
+\textbf{Sensors in use:}
+\begin{itemize}
+    \item Avalanche Photodiode (APD) \\ \\
+\end{itemize}
+
+\noindent
+\textbf{Summary} In a broad sense, Brain-Machine Interfaces (BMIs) are used to convert thought-processes into an accessible signals that can be used by an external device. BMIs can be invasive or non-invasive dependent on whether the brain stimulator is implanted or externally placed. Externally placed BMI devices are increasingly becoming popular because of the convenience afforded to the patient. In this paper, a bidirectional BMI device is proposed that uses transcranial direct-current stimulation (tDCS) with dynamic dosage adjustment. tDCS is the preferred approach because it uses electrodes connected to skull for stimulation making it completely non-invasive. In prior work, devices using tDCS ran into issues with dynamic stimulation adjustments because electroencephologram (EEG) based closed-loop techniques coupled with the electrical stimulation mechanism. To avoid this, the proposed device uses frequency-domain near infrared spectroscopy (fdNIRS) that side-steps the issue of electrical coupling by using optical stimulation. Sensing of cerebal hemodynamics is done with signal processing techniques applied on a fdNIRS signal captures using a simple avalanche photodiode. \\ \\
+
+%%%%%%
+
+\textbf{Paper VI} 
+\\ \\
+\noindent
+Kartsch, Victor, Giuseppe Tagliavini, Marco Guermandi, Simone Benatti, Davide Rossi, and Luca Benini. “BioWolf: A Sub-10-MW 8-Channel Advanced Brain–Computer Interface Platform With a Nine-Core Processor and BLE Connectivity.” IEEE Transactions on Biomedical Circuits and Systems 13, no. 5 (October 2019): 893–906. https://doi.org/10.1109/TBCAS.2019.2927551. \\ \\
+
+\noindent
+\textbf{Keywords} BioWolf, Parallel architecture, Low-power DSP Chip, 8-channel BCI platform. \\ \\
+
+\noindent
+\textbf{Abstract} Advancements in digital signal processing (DSP) and machine learning techniques have boosted the popularity of brain-computer interfaces (BCIs), where electroencephalography is a widely accepted method to enable intuitive human-machine interaction. Nevertheless, the evolution of such interfaces is currently hampered by the unavailability of embedded platforms capable of delivering the required computational power at high energy efficiency and allowing for a small and unobtrusive form factor. To fill this gap, we developed BioWolf, a highly wearable (40 mm × 20 mm × 2 mm) BCI platform based on Mr. Wolf, a parallel ultra low power system-on-chip featuring nine RISC-V cores with DSP-oriented instruction set extensions. BioWolf also integrates a commercial 8-channel medical-grade analog-to-digital converter, and an ARM-Cortex M4 microcontroller unit (MCU) with bluetooth low-energy connectivity. To demonstrate the capabilities of the system, we implemented and tested a BCI featuring canonical correlation analysis (CCA) of steady-state visual evoked potentials. The system achieves an average information transfer rate of 1.46 b/s (aligned with the state-of-the-art of bench-top systems). Thanks to the reduced power envelope of the digital computational platform, which consumes less than the analog front-end, the total power budget is just 6.31 mW, providing up to 38 h operation (65 mAh battery). To our knowledge, our design is the first to explore the significant energy boost of a parallel MCU with respect to single-core MCUs for CCA-based BCI. \\ \\
+
+\noindent
+\textbf{Summary} A limiting factor to the wide adoption of Brain-Computer Interfaces is the inadequate battery life and processing power. An improvement in one of these areas results in a reduction in the other. To avoid this issue, this paper proposes a novel parallel digital signal processing (DSP) chip and microcontroller (MCU) architecture that increases the processing power while simultaneously keeping system power consumption low. The system directly converts brain signals collected by active electrodes into digital signals via a commercial analog-to-digital convertor. The resulting signal is fed into a parallel ultra low-power system-on-a-chip (SoC) designed by the authors in a previous paper dubbed Mr.Wolf. The Mr.Wolf SoC uses a eight RISC-V processors arranged in parallel optimized with additional hardware to implement DSP algorithms. The resulting non-invasive system along with a solar energy harvester and a commercial low-power RF communication chip was tested on five healthy subjects. The results showed that the device performance was comparable to other BCI devices but with a much longer battery life of up to 38 hours. \\ \\

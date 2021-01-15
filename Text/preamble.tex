@@ -1,0 +1,43 @@
+% Preamble file, place packages and formating options here.
+% *** CITATION PACKAGES ***
+\usepackage{cite}
+% *** GRAPHICS RELATED PACKAGES ***
+\usepackage{soul}                 % hyphenation, underlining, highlighting, and more!
+\usepackage{graphicx}
+\usepackage{epstopdf}             % makes EPS images into PDF for pdfTEX
+\usepackage{svg}
+\graphicspath{{./images/}}
+\svgpath{{./images/}}
+\DeclareGraphicsExtensions{.eps,.pdf,.jpeg,.png}
+% *** MATH PACKAGES ***
+\usepackage{amsmath}
+\usepackage{gensymb}              % common symbols for text mode and math mode
+% *** SPECIALIZED LIST PACKAGES ***
+\usepackage{algorithmic}
+% *** ALIGNMENT PACKAGES ***
+\usepackage{array}
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+% *** SUBFIGURE PACKAGES ***
+\usepackage[caption=false,font=footnotesize]{subfig}
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+\usepackage{url}
+\usepackage{breakurl}             % keeps URLS from breaking bibliography formatting 
+\usepackage[breaklinks]{hyperref} % keeps URLS from breaking bibliography formatting
+% *** TABLES ***
+\usepackage{booktabs}             % optimizes table formatting
+\usepackage{multirow}             % allow multi row table cells
+\usepackage{colortbl}             % helps with cell coloring in tables
+% \usepackage[table,xcdraw]{xcolor}
+\usepackage{lipsum}
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
